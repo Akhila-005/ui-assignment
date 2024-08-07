@@ -1,0 +1,100 @@
+.sidebar {
+  width: 60px; /* Sidebar width */
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Space between icon group and logout button */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0; /* Padding inside the sidebar */
+  box-sizing: border-box; /* Include padding in width calculation */
+  transition: width 0.3s; /* Smooth transition for width change */
+}
+
+.dashboard-icon {
+  margin-bottom: 20px; /* Space below dashboard icon */
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.dashboard-icon:hover {
+  transform: scale(1.2);
+  color: #007bff; /* Blue color on hover */
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center align icons vertically */
+  width: 100%; /* Full width of sidebar */
+  padding: 0 10px; /* Padding inside the container */
+  box-sizing: border-box; /* Include padding in width calculation */
+  margin-top: 60px; /* Space from the dashboard icon */
+}
+
+.icon {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  margin: 10px 0; 
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #007bff; 
+}
+
+.logout-button {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  transform: scale(1.2);
+  color: #ff4d4f; 
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 50px; 
+  }
+
+  .icon {
+    font-size: 20px; 
+  }
+
+  .dashboard-icon {
+    font-size: 20px;
+  }
+
+  .logout-button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 40px; 
+  }
+
+  .icon {
+    font-size: 18px; 
+  }
+
+  .dashboard-icon {
+    font-size: 18px;
+  }
+
+  .logout-button {
+    font-size: 18px; 
+  }
+}

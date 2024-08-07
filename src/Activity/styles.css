@@ -1,0 +1,81 @@
+.activity-box {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dropdown .MuiOutlinedInput-notchedOutline {
+  border-color: #555;
+}
+
+.dropdown .MuiSelect-icon {
+  color: #fff;
+}
+
+.table-container {
+  margin-top: 20px; 
+}
+
+.table-container h2 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+  color: #fff;
+}
+
+.table-container th {
+  background-color: #444;
+}
+
+.table-container tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .dropdown-container {
+    top: 5px;
+    right: 5px;
+  }
+
+  .table-container h2 {
+    font-size: 1rem;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 6px;
+  }
+}
